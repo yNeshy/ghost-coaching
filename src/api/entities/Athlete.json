@@ -1,0 +1,27 @@
+{
+  "name": "Athlete",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Athlete's full name"
+    },
+    "email": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "current_cycle": {
+      "type": "string",
+      "description": "Name of current training cycle"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

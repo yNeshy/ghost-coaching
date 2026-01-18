@@ -1,0 +1,35 @@
+{
+  "name": "ExerciseNote",
+  "type": "object",
+  "properties": {
+    "parent_id": {
+      "type": "string",
+      "description": "ID of the exercise this note is linked to"
+    },
+    "athlete_id": {
+      "type": "string"
+    },
+    "author_role": {
+      "type": "string",
+      "enum": [
+        "coach",
+        "athlete"
+      ]
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "exercise_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "parent_id",
+    "athlete_id",
+    "author_role",
+    "content"
+  ]
+}

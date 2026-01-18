@@ -1,0 +1,130 @@
+{
+  "name": "TrainingBlock",
+  "type": "object",
+  "properties": {
+    "athlete_id": {
+      "type": "string",
+      "description": "Reference to athlete"
+    },
+    "cycle_name": {
+      "type": "string"
+    },
+    "is_completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether athlete has completed this program"
+    },
+    "current_week": {
+      "type": "number",
+      "default": 1,
+      "description": "Current week the athlete is on"
+    },
+    "lifts": {
+      "type": "object",
+      "description": "Main lifts with weekly progressions",
+      "properties": {
+        "squats": {
+          "type": "object",
+          "properties": {
+            "week1": {
+              "type": "string"
+            },
+            "week2": {
+              "type": "string"
+            },
+            "week3": {
+              "type": "string"
+            }
+          }
+        },
+        "deadlifts": {
+          "type": "object",
+          "properties": {
+            "week1": {
+              "type": "string"
+            },
+            "week2": {
+              "type": "string"
+            },
+            "week3": {
+              "type": "string"
+            }
+          }
+        },
+        "secondary_squats": {
+          "type": "object",
+          "properties": {
+            "week1": {
+              "type": "string"
+            },
+            "week2": {
+              "type": "string"
+            },
+            "week3": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "accessories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "sets": {
+            "type": "string"
+          },
+          "reps": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "video_url": {
+            "type": "string"
+          },
+          "day": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "rehab": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "protocol": {
+            "type": "string"
+          },
+          "video_url": {
+            "type": "string"
+          },
+          "day": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "athlete_id",
+    "cycle_name"
+  ]
+}

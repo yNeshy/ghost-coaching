@@ -1,0 +1,38 @@
+{
+  "name": "PerformanceLog",
+  "type": "object",
+  "properties": {
+    "athlete_id": {
+      "type": "string"
+    },
+    "exercise_id": {
+      "type": "string"
+    },
+    "exercise_name": {
+      "type": "string"
+    },
+    "week": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "actual_weight": {
+      "type": "string"
+    },
+    "actual_reps": {
+      "type": "string"
+    },
+    "rpe": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "athlete_id",
+    "exercise_id",
+    "week"
+  ]
+}
